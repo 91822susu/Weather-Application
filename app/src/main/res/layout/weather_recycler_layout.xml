@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:layout_gravity="center"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:gravity="center"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:padding="4dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTemperature"
+            android:layout_below="@id/txtTime"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="23"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imgCondition"
+            android:layout_below="@id/txtTemperature"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWindSpeed"
+            android:layout_below="@id/imgCondition"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:padding="3dp"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
